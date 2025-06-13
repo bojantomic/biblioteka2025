@@ -6,9 +6,21 @@ import java.util.List;
 import biblioteka.Autor;
 import biblioteka.Knjiga;
 
+/**
+ * Implementira BibliotekaInterface tako što čuva knjige
+ * u listi u memoriji (ArrayList implementacija)
+ * 
+ * @see java.util.ArrayList
+ */
 public class Biblioteka implements BibliotekaInterface {
 	
 	//Ovo je implementirano kao ArrayList zbog cestog dodavanja i pretrage
+	/**
+	 * Knjige se čuvaju u listi u memoriji preko ArrayList
+	 * implementacije zbog čestog dodavanja i pretrage.
+	 * 
+	 * @see java.util.ArrayList
+	 */
 	private List<Knjiga> knjige = new ArrayList<Knjiga>();
 
 	@Override
